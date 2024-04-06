@@ -1,0 +1,191 @@
+:root {
+  --color1: #782221;
+  --color2: #2c1d27;
+  --color3: #dbc2a4;
+  --color4: #fdfdfd;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(/assets/fonts/Raleway-Black.ttf);
+  src: url(/assets/fonts/Raleway-Bold.ttf);
+  src: url(/assets/fonts/Raleway-Italic.ttf);
+}
+body {
+  font-family: "Raleway-black", sans-serif;
+  color: #2c1d27;
+  max-width: 1160px;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+div {
+  border-right: 1px solid #782221;
+  background-color: #782221;
+}
+header {
+  color: var(--color4);
+  width: 100%;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  max-height: 25%;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+nav {
+  padding: 0;
+  margin-top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 6%;
+  background-color: var(--color2);
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-right: 1px solid #000;
+  padding-left: 0px;
+  margin-top: 0;
+  padding-top: 0;
+  height: 65%;
+  font-size: 0.8rem;
+  justify-content: space-between;
+}
+#left {
+  width: 25%;
+  justify-content: start;
+  color: var(--color4);
+}
+#right {
+  width: 72%;
+  background-color: var(--color4);
+  padding-left: 15px;
+}
+footer {
+  width: 100%;
+  text-align: center;
+  height: 3%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 20px;
+  color: var(--color4);
+  font-size: 0.8rem;
+}
+h1 {
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 1, 5rem;
+}
+h2 {
+  font-family: "Lato-bold", bold, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+}
+h3 {
+  font-family: "Lato-bold", sans-serif;
+  color: #000;
+  background-color: var(--color3);
+  text-indent: 10px;
+  text-align: start;
+  font-size: larger;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+p {
+  padding: 0px;
+  margin: 0;
+  text-indent: 10px;
+  margin-top: 0.4rem; /* Responsive espace  dessus*/
+  margin-bottom: 0.4rem; /* Responsive espace desous*/
+}
+#right p {
+  font-family: "Lato-bold", sans-serif;
+}
+#texte {
+  padding-left: 15px;
+}
+
+#left ul {
+  padding-left: 30px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  text-indent: 0em;
+  list-style-type: disc;
+}
+#right ul {
+  padding-left: 50px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  text-indent: 0em;
+  list-style-type: disc;
+}
+#title {
+  font-weight: bold;
+  font-size: larger;
+}
+#title:hover {
+  border-left: 5px solid var(--color1);
+}
+#photo:hover {
+  transform: scale(1.05);
+}
+#photo {
+  max-width: 15%;
+  max-height: auto;
+  clip-path: ellipse(33% 50%);
+  margin-top: 10px;
+  cursor: zoom-in; /* Change le curseur pour indiquer un zoom possible */
+  transition: transform 0.3s ease; /* Optionnel: ajoute une légère transition pour le survol */
+}
+#address {
+  margin-left: 30px;
+  vertical-align: middle;
+  color: white;
+  text-decoration: none; /* Enlève le soulignement */
+}
+#email {
+  color: white;
+  text-decoration: none; /* Enlève le soulignement */
+}
+#telephon {
+  margin-right: 30px;
+  color: white;
+  text-decoration: none; /* Enlève le soulignement */
+}
+#footer_link {
+  max-width: 2%;
+  transition: opacity 0.3s ease; /* Transition douce pour l'opacité */
+  opacity: 1; /* Opacité initiale à 100% */
+}
+#footer_link:hover {
+  opacity: 0.6; /* Réduction de l'opacité à 70% au survol */
+}
+#footer_git {
+  max-width: 2%;
+  transition: opacity 0.3s ease; /* Transition douce pour l'opacité */
+  opacity: 1; /* Opacité initiale à 100% */
+}
+#footer_git:hover {
+  opacity: 0.6; /* Réduction de l'opacité à 70% au survol */
+}
+#footer_twit {
+  max-width: 2%;
+  transition: opacity 0.3s ease; /* Transition douce pour l'opacité */
+  opacity: 1; /* Opacité initiale à 100% */
+}
+#footer_twit:hover {
+  opacity: 0.6; /* Réduction de l'opacité à 70% au survol */
+}
